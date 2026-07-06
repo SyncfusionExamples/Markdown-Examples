@@ -12,7 +12,7 @@ namespace Convert_Markdown_to_Excel
                 IApplication application = excelEngine.Excel;
                 application.DefaultVersion = ExcelVersion.Xlsx;
 
-                IWorkbook workbook = application.Workbooks.Open(Path.GetFullPath(@"Data/Sample.md"), ExcelOpenType.Markdown);
+                IWorkbook workbook = application.Workbooks.Open(Path.GetFullPath(@"Data/Template.md"), ExcelOpenType.Markdown);
                 // Save the workbook
                 using FileStream outputStream = new FileStream(Path.GetFullPath("Output/Result.xlsx"), FileMode.Create, FileAccess.Write);
                 workbook.SaveAs(outputStream);

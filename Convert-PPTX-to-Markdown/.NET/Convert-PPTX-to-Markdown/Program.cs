@@ -14,7 +14,7 @@ namespace Convert_PowerPoint_to_Markdown
                 using (IPresentation presentation = Presentation.Open(inputStream))
                 {
                     //Save as a PPTX document into the Markdown FileStream.
-                    using (FileStream outputStream = new FileStream("PPTXtoMd.md", FileMode.Create, FileAccess.ReadWrite))
+                    using (FileStream outputStream = new FileStream(Path.GetFullPath(@"Output/PPTXtoMd.md"), FileMode.Create, FileAccess.ReadWrite))
                     {
                         presentation.Save(outputStream);
                     }
