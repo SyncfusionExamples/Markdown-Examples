@@ -1,6 +1,6 @@
 # Create Markdown Document using C#
 
-The Syncfusion&reg; [Markdown Library](https://help.syncfusion.com/document-processing/markdown/markdown-library/net/getting-started) empowers you to create, read, and edit Markdown documents programmatically. Using this library, you can create Markdown elements in a document using C#.
+The Syncfusion&reg; [Markdown Library](https://www.syncfusion.com/document-sdk/net-markdown-library) empowers you to create, read, and edit Markdown documents programmatically. Using this library, you can create Markdown elements in a document using C#.
 
 ## Steps to create Markdown documents programmatically
 
