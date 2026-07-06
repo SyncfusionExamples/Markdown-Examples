@@ -19,7 +19,7 @@ Step 4: Add the following code snippet in Program.cs file to convert a Markdown 
 
 ```csharp
 // Open an existing Markdown file.
-using (IPresentation pptxDoc = Presentation.Open(Path.GetFullPath(@"Data/Input.md")))
+using (IPresentation pptxDoc = Presentation.Open(Path.GetFullPath(@"Data/Template.md")))
 {
     // Write memory stream to output file
     using (FileStream outputFileStream = new FileStream(Path.GetFullPath(@"Output/Result.PPTX"), FileMode.Create, FileAccess.Write))
@@ -29,4 +29,4 @@ using (IPresentation pptxDoc = Presentation.Open(Path.GetFullPath(@"Data/Input.m
 }
 ```
 
-More information about PowerPoint to Markdown conversion can be found in this [documentation](https://help.syncfusion.com/document-processing/powerpoint/conversions/markdown-to-powerpoint) section.
+More information about Markdown to PowerPoint conversion can be found in this [documentation](https://help.syncfusion.com/document-processing/powerpoint/conversions/markdown-to-powerpoint) section.
