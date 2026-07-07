@@ -1,0 +1,1 @@
+**A new text is added to the paragraph**
