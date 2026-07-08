@@ -1,0 +1,1 @@
+![Picture](https://example.com/images/logo.png)

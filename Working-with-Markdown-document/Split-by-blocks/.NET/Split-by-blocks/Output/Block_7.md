@@ -1,0 +1,1 @@
+The Hello `class` declared by the "Hello, World" program has a single member, the method named `Main`. The `Main` method is declared with the static modifier. By convention, a static method named `Main` serves as the entry point of a C\# program.

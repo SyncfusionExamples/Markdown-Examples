@@ -1,0 +1,1 @@
+>This blockquote is created using paragraph style.

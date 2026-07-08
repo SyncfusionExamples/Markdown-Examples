@@ -1,0 +1,1 @@
+- A `struct` type is similar to a class type in that it represents a structure with data members and function members. However, unlike classes, structs are value types and don't typically require heap allocation. Struct types don't support user\-specified inheritance, and all struct types implicitly inherit from type `object`.
