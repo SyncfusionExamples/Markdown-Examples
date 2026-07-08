@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37314.3 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customize-open-markdown-document", "Customize-open-markdown-document\Customize-open-markdown-document.csproj", "{52CF49A1-B288-4DBC-9491-D936CA546F13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52CF49A1-B288-4DBC-9491-D936CA546F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CF49A1-B288-4DBC-9491-D936CA546F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CF49A1-B288-4DBC-9491-D936CA546F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CF49A1-B288-4DBC-9491-D936CA546F13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69C6EFA5-6EE5-4ED6-85F3-17D8EA2F125C}
+	EndGlobalSection
+EndGlobal

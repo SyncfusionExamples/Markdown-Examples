@@ -1,0 +1,1 @@
+A *type* defines the structure and behavior of any data in C\#. The declaration of a type may include its members, base type, interfaces it implements, and operations permitted for that type. A *variable* is a label that refers to an instance of a specific type.

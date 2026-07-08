@@ -1,0 +1,1 @@
+C\#'s value types are further divided into *simple types*, *enum types*, *struct types*, *nullable value types*, and *tuple value types*.
