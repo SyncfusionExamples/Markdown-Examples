@@ -1,6 +1,6 @@
 # Convert Markdown to Excel Document using C#
 
-The Syncfusion&reg; [.NET Excel Library](https://www.syncfusion.com/document-sdk/net-excel-library) (XlsIO) enables you to create, read, edit, and convert Excel workbooks programmatically without Microsoft Excel or interop dependencies. Using this library, you can convert Excel documents to Markdown format using C#.
+The Syncfusion&reg; [.NET Excel Library](https://www.syncfusion.com/document-sdk/net-excel-library) (XlsIO) enables you to create, read, edit, and convert Excel workbooks programmatically without Microsoft Excel or interop dependencies. Using this library, you can **convert Markdown to Excel format** using C#.
 
 ## Steps to convert Markdown to Excel programmatically
 
@@ -23,11 +23,11 @@ using (ExcelEngine excelEngine = new ExcelEngine())
     IApplication application = excelEngine.Excel;
     application.DefaultVersion = ExcelVersion.Xlsx;
 
-    IWorkbook workbook = application.Workbooks.Open(Path.GetFullPath(@"Data/Sample.md"), ExcelOpenType.Markdown);
+    IWorkbook workbook = application.Workbooks.Open(Path.GetFullPath(@"Data/Template.md"), ExcelOpenType.Markdown);
     // Save the workbook
     using FileStream outputStream = new FileStream(Path.GetFullPath("Output/Result.xlsx"), FileMode.Create, FileAccess.Write);
     workbook.SaveAs(outputStream);
 }
 ```
 
-More information about Word to Markdown conversion and vice versa can be found in this [documentation](https://help.syncfusion.com/document-processing/excel/conversions/markdown-to-excel/overview) section.
+More information about Markdown to Excel conversion and vice versa can be found in this [documentation](https://help.syncfusion.com/document-processing/excel/conversions/markdown-to-excel/overview) section.
