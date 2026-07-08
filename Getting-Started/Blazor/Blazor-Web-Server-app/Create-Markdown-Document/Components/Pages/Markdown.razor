@@ -1,0 +1,22 @@
+﻿@rendermode InteractiveServer
+@page "/Markdown"
+@using System.IO;
+@using Create_Markdown_Document;
+@inject Create_Markdown_Document.Data.MarkdownService service
+@inject Microsoft.JSInterop.IJSRuntime JS
+
+<h2>Syncfusion Markdown Library</h2>
+<p>The Syncfusion Markdown library is a Blazor Markdown library used to create, read, and edit Markdown files in applications without external dependencies.</p>
+<button class="btn btn-primary" @onclick="@CreateMarkdown">Create Markdown</button>
+
+@code {
+    MemoryStream documentStream;
+    /// <summary>
+    /// Creates and downloads the Markdown document.
+    /// </summary>
+    protected async void CreateMarkdown()
+    {
+        documentStream = service.CreateMarkdown();
+        await JS.SaveAs("Sample.md", documentStream.ToArray());
+    }
+}
