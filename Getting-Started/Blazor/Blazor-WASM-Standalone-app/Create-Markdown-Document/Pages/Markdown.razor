@@ -70,5 +70,6 @@
         // Disposes the document
         markdownDocument.Dispose();
         await JS.SaveAs("Sample.md", stream.ToArray());
+		stream.Dispose();
     }
 }

@@ -18,5 +18,6 @@
     {
         documentStream = service.CreateMarkdown();
         await JS.SaveAs("Sample.md", documentStream.ToArray());
+		documentStream.Dispose();
     }
 }
