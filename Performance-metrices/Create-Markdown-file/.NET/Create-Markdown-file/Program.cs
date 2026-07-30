@@ -271,7 +271,7 @@ class Program
         footerText.TextFormat.Italic = true;
 
         // ── Save the Markdown file
-        doc.Save("../../../Output/Result.md");
+        doc.Save(Path.GetFullPath("Output/Result.md"));
         stopwatch.Stop();
         Console.WriteLine($"Time taken to create Markdown file: {stopwatch.Elapsed.TotalSeconds} seconds");
     }

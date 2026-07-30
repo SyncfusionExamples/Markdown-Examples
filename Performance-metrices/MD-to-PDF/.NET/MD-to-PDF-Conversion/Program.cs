@@ -11,7 +11,7 @@ class Program
     {
         Stopwatch stopwatch = Stopwatch.StartNew();
         // Open an existing Markdown file.
-        using (WordDocument document = new WordDocument(Path.GetFullPath("../../../Data/Document-50.md")))
+        using (WordDocument document = new WordDocument(Path.GetFullPath("Data/Document-50.md")))
         {
             // Create an instance of DocIORenderer.
             using (DocIORenderer renderer = new DocIORenderer())
@@ -20,7 +20,7 @@ class Program
                 using (PdfDocument pdfDocument = renderer.ConvertToPDF(document))
                 {
                     // Save the PDF document.
-                    using (FileStream outputStream = new FileStream(Path.GetFullPath("../../../Output/Output.pdf"), FileMode.Create, FileAccess.Write))
+                    using (FileStream outputStream = new FileStream(Path.GetFullPath("Output/Output.pdf"), FileMode.Create, FileAccess.Write))
                     {
                         pdfDocument.Save(outputStream);
                     }

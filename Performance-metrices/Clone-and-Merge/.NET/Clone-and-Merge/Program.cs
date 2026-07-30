@@ -1,8 +1,4 @@
-﻿
-using Syncfusion.DocIO;
-using Syncfusion.DocIO.DLS;
-using Syncfusion.Office.Markdown;
-using System;
+﻿using Syncfusion.Office.Markdown;
 using System.Diagnostics;
 
 
@@ -13,12 +9,12 @@ class Program
        
         Stopwatch stopwatch = Stopwatch.StartNew();
         //Opens an existing Markdown document
-        using (MarkdownDocument sourceDocument = new MarkdownDocument("../../../Data/Document-100.md"))
+        using (MarkdownDocument sourceDocument = new MarkdownDocument(Path.GetFullPath("Data/Document-100.md")))
         {
             //Creates a clone of Input Template 
             MarkdownDocument clonedDocument = sourceDocument.Clone();
             //Saves and closes the cloned document instance
-            clonedDocument.Save("../../../Output/Result.md");
+            clonedDocument.Save(Path.GetFullPath("Output/Result.md"));
             //Closes the document
             clonedDocument.Dispose();
         }
