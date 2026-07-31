@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Open_and_Save_MD_document</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Markdown" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\Document-2.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	 <None Update="Data\Document-50.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	 <None Update="Data\Document-100.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	 <None Update="Data\Document-500.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Output\.gitkeep">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
