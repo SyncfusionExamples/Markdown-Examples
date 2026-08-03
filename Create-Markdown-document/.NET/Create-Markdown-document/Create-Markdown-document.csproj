@@ -13,7 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Output\.gitkeep">
+    <None Update="Data\photo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Update="Output\.gitkeep">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
