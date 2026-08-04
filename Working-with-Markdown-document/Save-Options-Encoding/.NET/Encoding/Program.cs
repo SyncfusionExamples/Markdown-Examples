@@ -13,7 +13,7 @@ namespace Encoding_in_SaveOptions
             // Creates a SaveOptions instance.
             SaveOptions saveOptions = new SaveOptions();
             // Sets the encoding to use when saving the Markdown document.
-            saveOptions.Encoding = Encoding.Unicode;
+            saveOptions.Encoding = Encoding.UTF8;
             // Saves the Markdown document with the specified encoding.
             markdownDocument.Save("Output/Output.md", saveOptions);
             // Disposes the document to release all memory.
