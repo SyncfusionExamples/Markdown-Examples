@@ -8,10 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Data\AdventureCycle.jpg" />
-    <None Include="wwwroot\Data\Mountain-200.jpg" />
-    <None Include="wwwroot\Data\Mountain-300.jpg" />
-    <None Include="wwwroot\Data\Road-550-W.jpg" />
+    <None Include="wwwroot\Data\photo.jpg" />
   </ItemGroup>
 
   <ItemGroup>
