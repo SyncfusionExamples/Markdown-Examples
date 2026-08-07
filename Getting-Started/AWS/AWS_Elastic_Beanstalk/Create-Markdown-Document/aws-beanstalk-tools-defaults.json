@@ -1,0 +1,12 @@
+{
+  "region": "us-east-1",
+  "configuration": "Debug",
+  "framework": "net8.0",
+  "self-contained": true,
+  "application": "beakstalk-263827",
+  "environment": "Beakstalk-263827-env-2-new",
+  "enable-xray": false,
+  "enhanced-health-type": "basic",
+  "additional-options": "",
+  "proxy-server": "nginx"
+}
