@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Create_Markdown_Document": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7150",
+      "launchBrowser": false
+    }
+  }
+}
