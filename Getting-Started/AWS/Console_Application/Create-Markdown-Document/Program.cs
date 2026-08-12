@@ -34,14 +34,6 @@ namespace Create_Markdown_Document
 
             //Get the InvokeResponse from client InvokeRequest.
             InvokeResponse response = client.Invoke(invoke);
-            //var stream = new StreamReader(response.Payload);
-            //string payload = stream.ReadToEnd();
-
-            //Console.WriteLine("Lambda Response:");
-            //Console.WriteLine(payload);
-
-            //Console.WriteLine("Function Error:");
-            //Console.WriteLine(response.FunctionError);
             //Read the response stream
             var stream = new StreamReader(response.Payload);
             JsonReader reader = new JsonTextReader(stream);
