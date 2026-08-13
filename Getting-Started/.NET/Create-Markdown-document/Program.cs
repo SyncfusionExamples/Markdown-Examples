@@ -55,7 +55,7 @@ MdTableCell cell2 = dataRow.AddTableCell();
 cell2.Items.Add(new MdTextRange { Text = "AdventureWorks Cycles, the fictitious company on which the AdventureWorks sample databases are based, is a large, multinational manufacturing company." });
 
 //Save the Markdown document to  FileStream
-using FileStream outputStream = new FileStream(Path.GetFullPath(@"../../../Output/Result.md"), FileMode.Create);
+using FileStream outputStream = new FileStream(Path.GetFullPath(@"Output/Result.md"), FileMode.Create);
 markdownDocument.Save(outputStream);
 
 markdownDocument.Dispose();

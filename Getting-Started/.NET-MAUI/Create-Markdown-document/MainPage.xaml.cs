@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Reflection;
 using Microsoft.Maui.Controls;
@@ -76,7 +76,7 @@ namespace Create_Markdown_document
             ms.Position = 0;
             //Saves the memory stream as file.
             SaveService saveService = new();
-            saveService.SaveAndView("Sample.md", "application/msword", ms);
+            saveService.SaveAndView("Sample.md", "text/markdown", ms);
         }
     }
 }

@@ -60,7 +60,7 @@ namespace Create_Markdown_document
             MdTableCell cell2 = dataRow.AddTableCell();
             cell2.Items.Add(new MdTextRange { Text = "AdventureWorks Cycles, the fictitious company on which the AdventureWorks sample databases are based, is a large, multinational manufacturing company." });
             //Save the Markdown document
-            markdownDocument.Save(@"../../Sample.md");
+            markdownDocument.Save(@"Sample.md");
             markdownDocument.Dispose();
         }
     }

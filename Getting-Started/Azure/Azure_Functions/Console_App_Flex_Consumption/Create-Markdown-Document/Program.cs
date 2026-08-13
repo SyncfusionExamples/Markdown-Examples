@@ -24,8 +24,8 @@ class Program
             string outputPath = mediaType.Contains("word", StringComparison.OrdinalIgnoreCase)
                 || mediaType.Contains("officedocument", StringComparison.OrdinalIgnoreCase)
                 || mediaType.Equals("text/markdown", StringComparison.OrdinalIgnoreCase)
-                ? Path.GetFullPath("../../../Output/Output.md")
-                : Path.GetFullPath("../../../Output/function-error.txt");
+                ? Path.GetFullPath("Output/Output.md")
+                : Path.GetFullPath("Output/function-error.txt");
             // Write the response bytes to the output markdown file
             await File.WriteAllBytesAsync(outputPath, resBytes);
             Console.WriteLine($"Saved: {outputPath}");
