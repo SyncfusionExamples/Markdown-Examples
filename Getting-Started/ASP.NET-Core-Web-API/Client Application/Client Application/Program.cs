@@ -16,7 +16,7 @@ class Program
                 {
                     // Read the content as a string
                     Stream responseBody = await response.Content.ReadAsStreamAsync();
-                    FileStream fileStream = File.Create("../../../Output/Output.md");
+                    FileStream fileStream = File.Create(Path.GetFullPath(@"Output/Output.md"));
                     responseBody.CopyTo(fileStream);
                     fileStream.Close();
                 }
