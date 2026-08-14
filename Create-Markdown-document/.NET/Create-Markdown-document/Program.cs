@@ -25,21 +25,21 @@ namespace Create_Markdown_document
             item1.ListFormat.IsNumbered = false;
             item1.ListFormat.ListLevel = 0;
             item1.ListFormat.ListValue = "- ";
-            item1.AddTextRange().Text = "First item";
+            item1.AddTextRange().Text = "Wide range of road, mountain, and touring bicycles";
             // Adds the second list item.
             MdParagraph item2 = markdownDocument.AddParagraph();
             item2.ListFormat = new MdListFormat();
             item2.ListFormat.IsNumbered = false;
             item2.ListFormat.ListLevel = 0;
             item2.ListFormat.ListValue = "- ";
-            item2.AddTextRange().Text = "Second item";
+            item2.AddTextRange().Text = "Global sales and distribution network across multiple regions";
             // Adds the third list item.
             MdParagraph item3 = markdownDocument.AddParagraph();
             item3.ListFormat = new MdListFormat();
             item3.ListFormat.IsNumbered = false;
             item3.ListFormat.ListLevel = 0;
             item3.ListFormat.ListValue = "- ";
-            item3.AddTextRange().Text = "Third item";
+            item3.AddTextRange().Text = "Commitment to innovation and high quality bicycle manufacturing";
             // Adds a table to the Markdown document.
             MdTable table = markdownDocument.AddTable();
             table.ColumnAlignments.Add(MdColumnAlignment.Left);
