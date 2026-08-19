@@ -1,0 +1,59 @@
+﻿
+using System;
+using System.Windows.Forms;
+
+namespace Create_Markdown_document
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private Button btnCreate;
+        private Label label;
+
+        private void InitializeComponent()
+        {
+            label = new Label();
+            btnCreate = new Button();
+
+            //Label
+            label.Location = new System.Drawing.Point(0, 40);
+            label.Size = new System.Drawing.Size(426, 35);
+            label.Text = "Click the button to generate a Markdown document using Essential Markdown.";
+            label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+            //Button
+            btnCreate.Location = new System.Drawing.Point(180, 110);
+            btnCreate.Size = new System.Drawing.Size(85, 36);
+            btnCreate.Text = "Create Document";
+            btnCreate.Click += new EventHandler(btnCreate_Click);
+
+            //Create Markdown
+            ClientSize = new System.Drawing.Size(450, 150);
+            Controls.Add(label);
+            Controls.Add(btnCreate);
+            Text = "Create Markdown";
+        }
+
+        #endregion
+    }
+}
+

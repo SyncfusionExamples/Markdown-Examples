@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Create-Markdown-document (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Create-Markdown-document (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
